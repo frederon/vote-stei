@@ -1,0 +1,8 @@
+{
+  "short_name": "E-Vote STEI 2019",
+  "name": "E-Vote STEI 2019",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

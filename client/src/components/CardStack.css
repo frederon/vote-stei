@@ -1,0 +1,28 @@
+#card-stack {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    margin: 0.2em 1em;
+}
+
+@keyframes smaller {
+    from {
+        transform: scale(1);
+    }   
+    to {
+        transform: scale(0);
+    }
+}
+
+.smaller {
+    animation: smaller 0.5s forwards;
+}
+
+#stack-left , #stack-right {
+    margin: 0 1em;
+}
+
+#stack-left > img, #stack-right > img {
+        width: 12vw;
+        cursor: pointer;
+}

@@ -1,0 +1,54 @@
+[{
+    "id": 1,
+    "nama": "Bamban1g",
+    "ttl": "Bandung, XX XX 2999",
+    "visi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "misi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "prestasi": ["XXXXXXXX", "XXXXXXX123", "AAAAAAA"],
+    "photo": "http://localhost:3000/logodoang.png"
+},
+{
+    "id": 2,
+    "nama": "Bambang",
+    "ttl": "Bandung, XX XX 2999",
+    "visi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "misi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "prestasi": ["XXXXXXXX", "XXXXXXX123", "AAAAAAA"],
+    "photo": "http://localhost:3000/logodoang.png"
+},
+{
+    "id": 3,
+    "nama": "Bambang",
+    "ttl": "Bandung, XX XX 2999",
+    "visi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "misi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "prestasi": ["XXXXXXXX", "XXXXXXX123", "AAAAAAA"],
+    "photo": "http://localhost:3000/logodoang.png"
+},
+{
+    "id": 4,
+    "nama": "Bambang",
+    "ttl": "Bandung, XX XX 2999",
+    "visi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "misi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "prestasi": ["XXXXXXXX", "XXXXXXX123", "AAAAAAA"],
+    "photo": "http://localhost:3000/logodoang.png"
+},
+{
+    "id": 5,
+    "nama": "Bambang",
+    "ttl": "Bandung, XX XX 2999",
+    "visi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "misi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+    "prestasi": ["XXXXXXXX", "XXXXXXX123", "AAAAAAA"],
+    "photo": "http://localhost:3000/logodoang.png"
+},
+{
+  "id": 6,
+  "nama": "Bambang",
+  "ttl": "Bandung, XX XX 2999",
+  "visi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+  "misi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime itaque laudantium aperiam animi est distinctio asperiores nostrum dicta veniam accusantium incidunt officia debitis, quasi ipsam? Minima enim rerum quis.",
+  "prestasi": ["XXXXXXXX", "XXXXXXX123", "AAAAAAA"],
+  "photo": "http://localhost:3000/logodoang.png"
+}]

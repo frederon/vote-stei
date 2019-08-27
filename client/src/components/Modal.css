@@ -1,0 +1,107 @@
+.modal {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+    position: fixed;
+    background: white;
+    max-width: 80%;
+    border-radius: 15px;
+    padding: 1em 2em 2em 2em;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-main > h1 {
+    border-bottom: 1px solid hsl(0, 0%, 70%);
+    padding-bottom: .3em;
+        margin-bottom: 1.1em;
+            padding: .6em;
+            font-weight: bold;
+}
+
+.modal-main > p {
+        margin-bottom: 1.4em;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: lightgreen;
+}
+
+.continue {
+    margin-left: .4em;
+    background-color: limegreen !important;
+}
+
+.modal-main > button, .confirmation > .modal-buttons > button {
+    border: 0;
+    color: white;
+    background: rgb(228, 43, 43, .85);
+    width: 6em;
+    height: 2.2em;
+    border-radius: 12px;
+}
+
+.modal-main > button:hover {
+    background: rgb(228, 43, 43)
+}
+
+.details {
+    background: lightgrey;
+}
+
+.modal-details {
+    display: flex;
+}
+
+.modal-data-details {
+    margin-left: 1.5em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+b {
+    font-weight: bold !important;
+}
+
+.vote {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2em;
+    padding: .4em !important;
+    background: rgb(249, 0, 6);
+    color: whitesmoke;
+    border: 0;
+    padding: 1.1em;
+    transition: background .1s ease-in-out;
+    text-align: center;
+}
+
+.vote:hover {
+    background: rgb(249, 0, 6, 0.75);
+}
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,115 @@
+.card-container {
+    display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-2000px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "ornament-top . logo-top"
+        "number-top photo ."
+        ". photo ."
+        ". name ."
+        ". name number-bottom"
+        "logo-bottom . ornament-bottom";
+    grid-template-rows: 1fr 1fr 4fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: slideIn 0.5s both;
+}
+
+.card:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.ornament-top {
+    grid-area: ornament-top;
+    align-self: center;
+    font-family: serif;
+    color: red;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.number-top {
+    grid-area: number-top;
+    align-self: start;
+    color: red;
+    font-weight: bold;
+}
+
+.logo-top {
+    width: 24px;
+    grid-area: logo-top;
+    place-self: center;
+}
+
+.photo {
+    border: 2px solid red;
+    border-bottom: 0;
+    grid-area: photo;
+    height: 100%;
+}
+
+.name {
+    grid-area: name;
+    border: 2px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bottom {
+    width: 24px;
+    grid-area: logo-bottom;
+    transform: rotate(180deg);
+    place-self: center;
+}
+
+.number-bottom {
+    grid-area: number-bottom;
+    transform: rotate(180deg);
+    align-self: end;
+    color: red;
+    font-weight: bold;
+}
+
+.ornament-bottom {
+    grid-area: ornament-bottom;
+    transform: rotate(180deg);
+    align-self: center;
+    font-family: serif;
+    color: red;
+    font-weight: bold;
+    font-size: 1.6em;
+}
