@@ -103,7 +103,6 @@ export default class Login extends Component {
           }}
         />
       );
-       //return (<Vote nim={this.state.nim} token={this.state.token}></Vote>);
      }
     return (
       <div id="App">

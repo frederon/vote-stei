@@ -56,3 +56,7 @@
     max-width: 7em;
     background-color: white;
 }
+
+form > button {
+    display: block;
+}
