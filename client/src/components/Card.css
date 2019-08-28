@@ -16,8 +16,8 @@
 }
 
 .card {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 290px;
     background-color: white;
     margin-bottom: .5em;
     display: grid;
@@ -27,7 +27,7 @@
         ". name ."
         ". name number-bottom"
         "logo-bottom . ornament-bottom";
-    grid-template-rows: 1fr 1fr 4fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr 1fr 1fr;
     grid-template-columns: 1fr 4fr 1fr;
     border-radius: 8px;
     cursor: pointer;
@@ -71,7 +71,7 @@
 }
 
 .logo-top {
-    width: 24px;
+    width: 20px;
     grid-area: logo-top;
     place-self: center;
 }
@@ -81,6 +81,12 @@
     border-bottom: 0;
     grid-area: photo;
     height: 100%;
+}
+
+.photo > img {
+    min-width: 135px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .name {
@@ -93,7 +99,7 @@
 }
 
 .logo-bottom {
-    width: 24px;
+    width: 20px;
     grid-area: logo-bottom;
     transform: rotate(180deg);
     place-self: center;

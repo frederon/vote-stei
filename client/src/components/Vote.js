@@ -52,45 +52,43 @@ export default class Vote extends Component {
   };
 
   submitVote = (nim, vote) => {
-    axios.post(`http://localhost:4000/mahasiswa/${nim}/${vote}`)
-      .then(res => {
-        if (res.data != null) {
-          this.setState({
-            voteMessage: "Success! Thank you for voting",
-            voteModal: true
-          });
-        } else {
-          this.setState({
-            voteMessage: "An error occured when voting, please login again",
-            voteModal: true
-          });
-        }
-      })
-  }
+    axios.post(`http://localhost:4000/mahasiswa/${nim}/${vote}`).then(res => {
+      if (res.data != null) {
+        this.setState({
+          voteMessage: "Success! Thank you for voting",
+          voteModal: true
+        });
+      } else {
+        this.setState({
+          voteMessage: "An error occured when voting, please login again",
+          voteModal: true
+        });
+      }
+    });
+  };
 
   relogin = () => {
-                    this.setState({
-                      nim: "",
-                      token: ""
-                    });
-                  }
+    this.setState({
+      nim: "",
+      token: ""
+    });
+  };
 
   checkToken = (nim, token) => {
-    axios.get(`http://localhost:4000/mahasiswa/${nim}`)
-      .then(res => {
-        if (res.data != null) {
-          if (res.data.token === token) {
-            this.submitVote(nim, this.state.vote);
-          } else {
-            return false;
-          }
+    axios.get(`http://localhost:4000/mahasiswa/${nim}`).then(res => {
+      if (res.data != null) {
+        if (res.data.token === token) {
+          this.submitVote(nim, this.state.vote);
+        } else {
+          return false;
         }
-      });
-  }
+      }
+    });
+  };
 
   handleVote = () => {
     this.checkToken(this.state.nim, this.state.token);
-  }
+  };
 
   render() {
     if (this.props.location.state === undefined || this.state.nim === "") {
@@ -103,14 +101,11 @@ export default class Vote extends Component {
       );
     }
 
-    let cards = this.state.caketang.map((card, index) => 
-      (
-        <a onClick={e => this.showModal(e, index+1)}>
-          <Card vote={index+1}>
-          </Card>
-        </a>
-      )
-    );
+    let cards = this.state.caketang.map((card, index) => (
+      <a onClick={e => this.showModal(e, index + 1)}>
+        <Card vote={index + 1} />
+      </a>
+    ));
 
     return (
       <div id="Vote">
@@ -124,22 +119,18 @@ export default class Vote extends Component {
           voteMessage={this.state.voteMessage}
           voteModal={this.state.voteModal}
           relogin={this.relogin}
-        ></ModalDetail>
+        />
         <div className="header">
-          <img id="stei-logo-white" src="/logov.png" alt="Logo STEI 2019"></img>
+          <img id="stei-logo-white" src="/logov.png" alt="Logo STEI 2019" />
           <h1>Daftar Calon Ketua Angkatan</h1>
         </div>
         <div className="main">
-          {this.state.waited && (
-            <div className="card-container">
-              {cards}
-            </div>
-          )}
+          {this.state.waited && <div className="card-container">{cards}</div>}
           {!this.state.waited && (
             <CardStack
               isStackActive={this.state.isStackActive}
               onStackClick={this.onStackClick}
-            ></CardStack>
+            />
           )}
           <div className="boxed bleeping">{this.state.text}</div>
         </div>
