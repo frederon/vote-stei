@@ -21,11 +21,11 @@ export default class Vote extends Component {
       voteMessage: "",
       voteModal: false,
       nim:
-        this.props.location.state != undefined
+        this.props.location.state !== undefined
           ? this.props.location.state.nim
           : "",
       token:
-        this.props.location.state != undefined
+        this.props.location.state !== undefined
           ? this.props.location.state.token
           : ""
     };
@@ -54,7 +54,6 @@ export default class Vote extends Component {
   submitVote = (nim, vote) => {
     axios.post(`http://localhost:4000/mahasiswa/${nim}/${vote}`)
       .then(res => {
-        console.log(res);
         if (res.data != null) {
           this.setState({
             voteMessage: "Success! Thank you for voting",
@@ -80,7 +79,7 @@ export default class Vote extends Component {
     axios.get(`http://localhost:4000/mahasiswa/${nim}`)
       .then(res => {
         if (res.data != null) {
-          if (res.data.token == token) {
+          if (res.data.token === token) {
             this.submitVote(nim, this.state.vote);
           } else {
             return false;
@@ -90,14 +89,11 @@ export default class Vote extends Component {
   }
 
   handleVote = () => {
-    console.log(
-      `voting for nim ${this.state.nim} ${this.state.token} ${this.state.vote}`
-    );
     this.checkToken(this.state.nim, this.state.token);
   }
 
   render() {
-    if (this.props.location.state == undefined || this.state.nim == "") {
+    if (this.props.location.state === undefined || this.state.nim === "") {
       return (
         <Redirect
           to={{

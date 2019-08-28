@@ -3,10 +3,6 @@ import Modal from "./Modal";
 import "./Modal.css";
 
 export default class ModalConfirmation extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const showHideClassName = this.props.modal
       ? "modal display-block"

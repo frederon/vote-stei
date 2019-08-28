@@ -3,7 +3,7 @@ import './App.css';
 import Login from './components/Login';
 import Vote from "./components/Vote";
 import Token from "./components/Token";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (

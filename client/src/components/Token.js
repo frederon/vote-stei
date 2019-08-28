@@ -45,13 +45,11 @@ export default class Token extends Component {
                 status: "Success!",
                 message: `Token: ${res.data.token}`
               });
-              console.log(`Token: ${res.data.token}`);
             } else if (res.data.status === "failed") {
               this.setState({
                 status: "Error!",
                 message: res.data.message
               });
-              console.log(`Token: ${res.data.message}`);
             }
           } else {
             this.setState({
@@ -76,7 +74,9 @@ export default class Token extends Component {
           if (res.data != null) {
             this.setState({
               status: "Success",
-              message: `NIM : ${res.data.nim} Token: ${res.data.token}`
+              message: `NIM : ${res.data.nim}
+                        Token: ${res.data.token}
+                        Voted: ${res.data.vote !== undefined ? true : false}`
             });
           } else {
             this.setState({

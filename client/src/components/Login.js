@@ -50,9 +50,6 @@ export default class Login extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    console.log(`Token: ${this.state.token}`);
-    console.log(`NIM: ${this.state.nim}`);
-
     this.setState({
       statusClass: "error",
       status: "Error!",
@@ -91,7 +88,7 @@ export default class Login extends Component {
 
   render() {
 
-    if (this.state.redirect == true) {
+    if (this.state.redirect === true) {
       return (
         <Redirect
           to={{

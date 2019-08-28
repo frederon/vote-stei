@@ -1,13 +1,15 @@
 .card-container {
     display: flex;
-        justify-content: space-evenly;
-        width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100vw;
 }
 
 @keyframes slideIn {
     0% {
         transform: translateX(-2000px)
     }
+
     100% {
         transform: translateX(0)
     }
@@ -17,6 +19,7 @@
     width: 250px;
     height: 300px;
     background-color: white;
+    margin-bottom: .5em;
     display: grid;
     grid-template-areas: "ornament-top . logo-top"
         "number-top photo ."
