@@ -64,7 +64,6 @@ export default class Login extends Component {
         .get(`http://localhost:4000/mahasiswa/${this.state.nim}`)
         .then(res => {
           if (res.data != null) {
-            console.log(this.state.token);
             if (res.data.token === this.state.token) {
               this.setState({ status: "Success!", message: "Thank you!", statusClass: "success"});
             } else {

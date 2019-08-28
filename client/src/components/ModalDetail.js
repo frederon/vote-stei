@@ -40,6 +40,9 @@ export default class ModalDetail extends Component {
           vote={this.props.vote}
           nim={this.props.nim}
           token={this.props.token}
+          voteMessage={this.props.voteMessage}
+          voteModal={this.props.voteModal}
+          relogin={this.props.relogin}
         ></ModalConfirmation>
         <section className="modal-main details">
           <div className="modal-details">

@@ -18,6 +18,8 @@ export default class Vote extends Component {
       isStackActive: true,
       vote: 1,
       text: "CLICK THE CARDS",
+      voteMessage: "",
+      voteModal: false,
       nim:
         this.props.location.state != undefined
           ? this.props.location.state.nim
@@ -54,16 +56,25 @@ export default class Vote extends Component {
       .then(res => {
         console.log(res);
         if (res.data != null) {
-          console.log("success voting!");
           this.setState({
-            nim: "",
-            token: ""
+            voteMessage: "Success! Thank you for voting",
+            voteModal: true
           });
         } else {
-          console.log("error voting");
+          this.setState({
+            voteMessage: "An error occured when voting, please login again",
+            voteModal: true
+          });
         }
       })
   }
+
+  relogin = () => {
+                    this.setState({
+                      nim: "",
+                      token: ""
+                    });
+                  }
 
   checkToken = (nim, token) => {
     axios.get(`http://localhost:4000/mahasiswa/${nim}`)
@@ -114,6 +125,9 @@ export default class Vote extends Component {
           vote={this.state.vote}
           nim={this.state.nim}
           token={this.state.token}
+          voteMessage={this.state.voteMessage}
+          voteModal={this.state.voteModal}
+          relogin={this.relogin}
         ></ModalDetail>
         <div className="header">
           <img id="stei-logo-white" src="/logov.png" alt="Logo STEI 2019"></img>

@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 const PORT = 4000;
 
 const mahasiswaRoutes = require("./routes/mahasiswa.routes");
-const caketang = require("./caketang.json");
 
 app.use(cors());
 app.use(bodyParser.json());

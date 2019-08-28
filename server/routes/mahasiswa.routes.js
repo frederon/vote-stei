@@ -68,9 +68,8 @@ router.get("/:nim", function(req, res, next) {
 router.post("/:nim/:vote", function (req, res, next) {
   let nim = req.params.nim;
   let vote = req.params.vote;
-
   Mahasiswa.findOneAndUpdate(
-    { nim },
+    { nim , vote: null },
     {
       vote: {
         id: vote,
